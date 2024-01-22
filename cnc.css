@@ -1,0 +1,202 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+/*Boutique*/
+
+.mainproduit{
+    height: 100%;
+}
+.boutiqueproduittext{
+    margin-left: 1em;
+}
+#liste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produit{
+    display: flex;
+    border: gray 2px solid;
+    background-color: beige;
+    border-radius: 5px;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    margin: 1em;
+}
+.boutiqueproduitmisc{
+    display: flex;
+    flex-direction: row;
+    height: 2em;
+    align-items: center;
+    width: 100%;
+    margin-left: 1em;
+}
+
+/*Page principale*/
+
+.imageproduit{
+    width: 200px;
+    height: 200px;
+}
+
+#pageprincipale{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#presentation{
+    height: auto;
+    width: 90%;
+    border: gray 2px solid;
+    background-color: beige;
+    text-align: center;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin: 1%;
+}
+
+/*Header*/
+
+#header{
+    width: 90%;
+    height: auto;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: gray 2px solid;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#header a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#headercenter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*panier*/
+#formpanier, .produitspanier, #prixtotalpanier{
+    border: gray 2px solid;
+    background-color: beige;
+    border-radius: 5px;
+    margin: 1em;
+    font-size: 2em;
+    padding: 0.5em;
+}
+.textpaniervalidation{
+    font-size: 0.8em;
+}
+#formpanier{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+.imgpaniervalidation{
+    aspect-ratio: 1 / 1;
+    width: 100px;
+    height: 100px;
+}
+.produitspanier{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+#mainpanier{
+    width: auto;
+}
+#everythingpanier{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/*Commande admin*/
+
+.infoclientsadmin{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.maincommand{
+    border: gray 2px solid;
+    border-radius: 5px;
+    background-color: beige;
+    margin: 1%;
+    padding: 1em;
+}
+
+#allthecommandes{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (max-width: 768px){
+    /*header*/
+    
+    #header{
+        flex-direction: column;
+    }
+
+    /*boutique*/
+
+    .imageproduit{
+        width: 100px;
+        height: 100px;
+    }
+
+    .boutiqueproduitmisc{
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+    }
+
+    .produit{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainproduit{
+        height: auto;
+    }
+
+    /*panier*/
+
+    #everythingpanier{
+        flex-direction: column;
+    }
+
+    #formpanier{
+        width: auto;
+        margin: 0;
+    }
+
+    .produitspanier{
+        width: auto;
+        margin: 0;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #prixtotalpanier{
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    #mainpanier{
+        width: auto;
+    }
+}
